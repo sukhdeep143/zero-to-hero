@@ -34,7 +34,7 @@ console.log(add(10,20));
 
 
 // Objects 
-
+    
 let student: {
     id: number,
     age: number,
