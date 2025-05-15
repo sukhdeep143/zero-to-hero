@@ -20,3 +20,31 @@ type Status = "success" | "error" | "loading";
 
 let currentStatus: Status = "success";
 console.log(currentStatus);
+
+// Union Types (|)
+let value: string | number;
+
+function printId(id: string | number) {
+  console.log("Your ID is: " + id);
+}
+
+printId(101);      // OK
+printId("abc123"); // OK
+
+// ntersection Types (&)
+type A = { name: string };
+type B = { age: number };
+
+type C = A & B; // Must have both name and age
+
+
+// keyof Operator
+type Person = { name: string; age: number };
+type PersonKeys = keyof Person; // "name" | "age"
+
+function getProperty(obj: Person, key: keyof Person) {
+  return obj[key];
+}
+
+const p = { name: "John", age: 30 };
+console.log(getProperty(p, "name")); // John
