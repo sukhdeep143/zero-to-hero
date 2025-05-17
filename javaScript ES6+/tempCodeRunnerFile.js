@@ -1,3 +1,2 @@
-const Car = (name) => {
-//     this.brand = name;
-//   };
+console.log(y); // ReferenceError (let in TDZ)
+// let y = 20;
