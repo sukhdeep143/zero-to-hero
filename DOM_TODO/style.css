@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.Main {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input {
+    padding: auto;
+    border-radius: 5px;
+    box-shadow: 10px;
+    border-style: inset;
+    padding: 10px;
+
+}
+
+.btnadd {
+    padding: auto;
+    border-radius: 5px;
+    box-shadow: 10px;
+    border-style: none;
+    padding: 8px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    background: green;
+
+    cursor: pointer;
+
+}
+
+.delete {
+    padding: auto;
+    border-radius: 5px;
+    padding-right: 1px;
+    border-style: none;
+    padding: 8px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    background: red;
+    margin-left: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+
+}
+
+.main3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    /* color: aqua; */
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style:decimal-leading-zero;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    font-size: x-large;
+    font-weight: bold;
+    padding-left: 10px;
+
+}

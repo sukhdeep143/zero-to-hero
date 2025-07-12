@@ -1,26 +1,24 @@
-function addTask() {
-    const input = document.getElementById("taskInput");
-    const taskText = input.value.trim();
-  
-    if (taskText === "") {
-      alert("Please enter a task!");
-      return;
-    }
-  
-    const li = document.createElement("li");
-    li.textContent = taskText;
-  
-    // Create Delete Button
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
-    deleteBtn.onclick = function () {
-      li.remove();
-    };
-  
-    li.appendChild(deleteBtn);
-  
-    document.getElementById("taskList").appendChild(li);
-  
-    input.value = ""; 
+function AddTask() {
+  const InputByUSer = document.getElementById("taskInput");
+  const inputValue = InputByUSer.value.trim();
+
+  if (inputValue === "") {
+    alert("Please add some task so that we can add in your TODO List");
   }
-  
+
+  const Li = document.createElement("li");
+  Li.textContent = inputValue;
+
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete";
+  deleteButton.classList.add("delete");
+
+  deleteButton.addEventListener("click", () => {
+    Li.remove();
+  });
+
+  document.getElementById("taskList").appendChild(Li);
+
+  Li.appendChild(deleteButton);
+  InputByUSer.value = "";
+}
