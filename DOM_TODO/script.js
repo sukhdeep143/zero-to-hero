@@ -20,5 +20,7 @@ function AddTask() {
   document.getElementById("taskList").appendChild(Li);
 
   Li.appendChild(deleteButton);
+
+  
   InputByUSer.value = "";
 }
