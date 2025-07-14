@@ -23,4 +23,6 @@ function AddTask() {
 
   
   InputByUSer.value = "";
+
+  const btn = document.getElementById()
 }
