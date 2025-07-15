@@ -46,3 +46,6 @@ console.log("3rd one to execute!!!");
 // ✅ Step 3: resolve() tells JavaScript to schedule the .then() callback for the microtask queue.
 // ✅ Step 4: console.log("4. End") finishes the main stack.
 // ✅ Step 5: The event loop checks the microtask queue and runs "3. Promise then callback".
+
+
+// The microtask queue is a place where JavaScript keeps short, high-priority tasks that need to run after the current code finishes, but before other async things (like setTimeout).

@@ -3,7 +3,7 @@ function Person(name) {
 }
 
 Person.prototype.greet = function() {
-  console.log(`Hello, I’m ${this.name}`);
+  console.log(`Hello, I'm ${this.name}`);
 };
 
 const user = new Person("Sukhdeep");
